@@ -1,0 +1,234 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A465B701-D6E0-4A76-9403-4E35EA79D2BF}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Socket</RootNamespace>
+    <AssemblyName>Socket</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BetterListViewExpress, Version=3.2.2.0, Culture=neutral, PublicKeyToken=e6c91a3add447be2, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Program Files\Component Owl\Better ListView Express\Redistributable\.NET Framework Specific\.NET Framework 4.0\BetterListViewExpress.dll</HintPath>
+    </Reference>
+    <Reference Include="BetterSplitButton, Version=1.5.5.0, Culture=neutral, PublicKeyToken=e6c91a3add447be2, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ADO\ADO.cs" />
+    <Compile Include="BLL\Control\MainControler\Controler.cs" />
+    <Compile Include="BLL\Model\Model.cs" />
+    <Compile Include="BLL\Model\Purchase\Card.cs" />
+    <Compile Include="BLL\Model\Purchase\Order.cs" />
+    <Compile Include="BLL\Model\Purchase\Payment.cs" />
+    <Compile Include="BLL\Model\Members\Person.cs" />
+    <Compile Include="BLL\Model\Product\Product.cs" />
+    <Compile Include="BLL\Model\Members\Staff.cs" />
+    <Compile Include="BLL\Model\Members\User.cs" />
+    <Compile Include="BLL\Model\Validation\Validator.cs" />
+    <Compile Include="BLL\View\Home\AddToCartMessageBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BLL\View\Home\AddToCartMessageBox.Designer.cs">
+      <DependentUpon>AddToCartMessageBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BLL\View\Home\AdminPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BLL\View\Home\AdminPage.designer.cs">
+      <DependentUpon>AdminPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BLL\View\Home\CartPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BLL\View\Home\CartPage.designer.cs">
+      <DependentUpon>CartPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BLL\View\Home\FinancierPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BLL\View\Home\FinancierPage.Designer.cs">
+      <DependentUpon>FinancierPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BLL\View\Home\ManagerPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BLL\View\Home\ManagerPage.Designer.cs">
+      <DependentUpon>ManagerPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BLL\View\Home\StorePage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BLL\View\Home\StorePage.designer.cs">
+      <DependentUpon>StorePage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BLL\View\Home\UserPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BLL\View\Home\UserPage.designer.cs">
+      <DependentUpon>UserPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BLL\View\MyListView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CRUD\CardCRUD.cs" />
+    <Compile Include="CRUD\ICRUD.cs" />
+    <Compile Include="CRUD\ITableCRUD.cs" />
+    <Compile Include="CRUD\OrderCRUD.cs" />
+    <Compile Include="CRUD\PaymentCRUD.cs" />
+    <Compile Include="CRUD\PersonCRUD.cs" />
+    <Compile Include="CRUD\ProductCRUD.cs" />
+    <Compile Include="CRUD\StaffCRUD.cs" />
+    <Compile Include="CRUD\UserCRUD.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="BLL\View\Buying\BuyingWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BLL\View\Buying\BuyingWindow.Designer.cs">
+      <DependentUpon>BuyingWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BLL\View\Home\HomeWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BLL\View\Home\HomeWindow.Designer.cs">
+      <DependentUpon>HomeWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BLL\View\Login\LoginWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BLL\View\Login\LoginWindow.Designer.cs">
+      <DependentUpon>LoginWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="BLL\View\Registration\RegistrationWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BLL\View\Registration\RegistrationWindow.Designer.cs">
+      <DependentUpon>RegistrationWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_Socket_adp_mdb__0___ОстанняВерсіяDataSet.cs">
+      <DependentUpon>_Socket_adp_mdb__0___ОстанняВерсіяDataSet.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="_Socket_adp_mdb__0___ОстанняВерсіяDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>_Socket_adp_mdb__0___ОстанняВерсіяDataSet.xsd</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="BLL\View\Buying\BuyingWindow.resx">
+      <DependentUpon>BuyingWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BLL\View\Home\AddToCartMessageBox.resx">
+      <DependentUpon>AddToCartMessageBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BLL\View\Home\AdminPage.resx">
+      <DependentUpon>AdminPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BLL\View\Home\CartPage.resx">
+      <DependentUpon>CartPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BLL\View\Home\FinancierPage.resx">
+      <DependentUpon>FinancierPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BLL\View\Login\LoginWindow.resx">
+      <DependentUpon>LoginWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BLL\View\Registration\RegistrationWindow.resx">
+      <DependentUpon>RegistrationWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BLL\View\Home\StorePage.resx">
+      <DependentUpon>StorePage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BLL\View\Home\UserPage.resx">
+      <DependentUpon>UserPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BLL\View\Home\HomeWindow.resx">
+      <DependentUpon>HomeWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="_Socket_adp_mdb__0___ОстанняВерсіяDataSet.xsc">
+      <DependentUpon>_Socket_adp_mdb__0___ОстанняВерсіяDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="_Socket_adp_mdb__0___ОстанняВерсіяDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>_Socket_adp_mdb__0___ОстанняВерсіяDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="_Socket_adp_mdb__0___ОстанняВерсіяDataSet.xss">
+      <DependentUpon>_Socket_adp_mdb__0___ОстанняВерсіяDataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\Logo.jpg" />
+    <Content Include="Socket.adp.mdb%29-0 - ОстанняВерсія.mdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
