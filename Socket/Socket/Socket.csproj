@@ -148,15 +148,6 @@
     <Compile Include="BLL\View\Registration\RegistrationWindow.Designer.cs">
       <DependentUpon>RegistrationWindow.cs</DependentUpon>
     </Compile>
-    <Compile Include="_Socket_adp_mdb__0___ОстанняВерсіяDataSet.cs">
-      <DependentUpon>_Socket_adp_mdb__0___ОстанняВерсіяDataSet.xsd</DependentUpon>
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="_Socket_adp_mdb__0___ОстанняВерсіяDataSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>_Socket_adp_mdb__0___ОстанняВерсіяDataSet.xsd</DependentUpon>
-    </Compile>
     <EmbeddedResource Include="BLL\View\Buying\BuyingWindow.resx">
       <DependentUpon>BuyingWindow.cs</DependentUpon>
     </EmbeddedResource>
@@ -204,24 +195,10 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <None Include="_Socket_adp_mdb__0___ОстанняВерсіяDataSet.xsc">
-      <DependentUpon>_Socket_adp_mdb__0___ОстанняВерсіяDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="_Socket_adp_mdb__0___ОстанняВерсіяDataSet.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>_Socket_adp_mdb__0___ОстанняВерсіяDataSet.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="_Socket_adp_mdb__0___ОстанняВерсіяDataSet.xss">
-      <DependentUpon>_Socket_adp_mdb__0___ОстанняВерсіяDataSet.xsd</DependentUpon>
-    </None>
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
     <None Include="Resources\Logo.jpg" />
-    <Content Include="Socket.adp.mdb%29-0 - ОстанняВерсія.mdb">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

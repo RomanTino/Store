@@ -188,7 +188,7 @@ namespace Socket.Model
             this.cards = new List<Card>();
             this.orders = new List<Order>();
             this.payments = new List<Payment>();
-            PersonCRUD crudPerson = new PersonCRUD();
+            /*PersonCRUD crudPerson = new PersonCRUD();
             this.persons = crudPerson.TablRead();
             StaffCRUD crudStaff = new StaffCRUD();
             this.staffs = crudStaff.TablRead();
@@ -202,7 +202,7 @@ namespace Socket.Model
             OrderCRUD crudOrder = new OrderCRUD();
             this.orders = crudOrder.TablRead();
             PaymentCRUD crudPayment = new PaymentCRUD();
-            this.payments = crudPayment.TablRead();
+            this.payments = crudPayment.TablRead();*/
         }
     }
 }
